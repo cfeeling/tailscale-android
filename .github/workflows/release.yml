@@ -12,10 +12,9 @@ jobs:
   deploy:
     runs-on: ubuntu-22.04
     steps:
-      - uses: sudosubin/git-clone-action@v1.0.1
+      - uses: actions/checkout@v4
         with:
           repository: 'tailscale/tailscale-android'
-          platform: 'github'
           ref: 'main'
 
       - name: modify
